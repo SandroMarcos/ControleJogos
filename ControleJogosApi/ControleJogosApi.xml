@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ControleJogosApi</name>
+    </assembly>
+    <members>
+        <member name="M:ControleJogosApi.Controllers.ControladoraPadrao.#ctor(AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Construtor da classe
+            </summary>
+        </member>
+        <member name="P:ControleJogosApi.Controllers.ControladoraPadrao.IdUsuario">
+            <summary>
+            Propriedade onde irá armazenar o Id do usuário logado
+            </summary>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.EmprestimoController.Get(System.Int32)">
+            <summary>
+            GET: api/Emprestimo/5
+            Busca o histórico de empréstimos do jogo
+            </summary>
+            <param name="id">Id do Jogo</param>
+            <returns>Listagem de Histórico</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.EmprestimoController.Post(System.Int32)">
+            <summary>
+            Realiza o empréstimo de um jogo
+            </summary>
+            <param name="id">Id do Jogo</param>
+            <returns>Verdadeiro para emprestimo realizado, caso contrário mensagem de erro</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.EmprestimoController.Put(System.Int32)">
+            <summary>
+            PUT: api/Emprestimo/5
+            Realiza a devolução do jogo        
+            </summary>
+            <param name="id">Id do Jogo</param>
+            <returns>Verdadeiro para devolução realizado, caso contrário mensagem de erro</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.EmprestimoController.Delete(System.Int32)">
+            <summary>
+            DELETE: api/Emprestimo
+            Exclui todo os históricos de emprestimos de um determinado jogo
+            </summary>
+            <returns>Vedadeiro para exclusão com sucesso, caso contrário mensagem de erro</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.JogoController.Get">
+            <summary>
+            GET: api/Jogo
+            Busca todos os jogos do usuário logado
+            </summary>
+            <returns>coleção de jogos</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.JogoController.Get(System.Int32)">
+            <summary>
+            GET: api/Jogo/5
+            Busca os dados de um determinado jogo
+            </summary>
+            <param name="id"></param>
+            <returns>Dados do jogo</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.JogoController.ObterJogosDisponiveis">
+            <summary>
+            Busca os jogos disponíveis dos outros usuários
+            </summary>
+            <returns>Jogos disponíveis</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.JogoController.Post(Modelos.JogoReduzidoModel)">
+            <summary>
+            Insere um novo jogo
+            </summary>
+            <param name="modelo">Modelo de entrada</param>
+            <returns>Modelo de jogos</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.JogoController.Put(Modelos.JogoReduzidoModel)">
+            <summary>
+            Altera um jogo
+            </summary>
+            <param name="modelo">Modelo de entrada</param>
+            <returns>Modelo de jogos</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.JogoController.Delete(System.Int32)">
+            <summary>
+            Exclui um jogo
+            </summary>
+            <param name="id">Id do Jogo</param>
+            <returns>Verdadeiro para exclusão realizada, caso contrário mensagem de erro</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.JogoController.ExcluirJogos(System.Int32[])">
+            <summary>
+            Exclui uma lista de jogos, porém o jogo não poderá ter um histórico de emprestimos
+            </summary>
+            <param name="codigos">coleção de id's de jogos</param>
+            <returns>Verdadeiro para exclusões realizadas, caso contrário mensagem de erro</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.LoginController.Criar(Modelos.UsuarioModel)">
+            <summary>
+            Cria um novo usuário
+            </summary>
+            <param name="entrada">Modelo de usuário</param>
+            <returns>Dados para autenticação</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.LoginController.Autenticar(Modelos.EntradaAutenticacaoModel)">
+            <summary>
+            Autentica usuário
+            </summary>
+            <param name="entrada">Modelo para autenticação</param>
+            <returns>Dados para autenticação</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.UsuarioController.Put(Modelos.UsuarioModel)">
+            <summary>
+            Altera dados do usuário
+            </summary>
+            <param name="modelo">Modelo de usuário</param>
+            <returns>Modelo de usuários</returns>
+        </member>
+        <member name="M:ControleJogosApi.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>
+            Exclui um usuário
+            </summary>
+            <param name="id">Id do usuário</param>
+            <returns>Verdadeiro para exclusãp realizado com sucesso, caso contrário mensagem de erro</returns>
+        </member>
+    </members>
+</doc>

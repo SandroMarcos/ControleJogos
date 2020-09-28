@@ -15,8 +15,7 @@
             </summary>
         </member>
         <member name="M:ControleJogosApi.Controllers.EmprestimoController.Get(System.Int32)">
-            <summary>
-            GET: api/Emprestimo/5
+            <summary>        
             Busca o histórico de empréstimos do jogo
             </summary>
             <param name="id">Id do Jogo</param>
@@ -30,30 +29,26 @@
             <returns>Verdadeiro para emprestimo realizado, caso contrário mensagem de erro</returns>
         </member>
         <member name="M:ControleJogosApi.Controllers.EmprestimoController.Put(System.Int32)">
-            <summary>
-            PUT: api/Emprestimo/5
+            <summary>        
             Realiza a devolução do jogo        
             </summary>
             <param name="id">Id do Jogo</param>
             <returns>Verdadeiro para devolução realizado, caso contrário mensagem de erro</returns>
         </member>
         <member name="M:ControleJogosApi.Controllers.EmprestimoController.Delete(System.Int32)">
-            <summary>
-            DELETE: api/Emprestimo
+            <summary>        
             Exclui todo os históricos de emprestimos de um determinado jogo
             </summary>
             <returns>Vedadeiro para exclusão com sucesso, caso contrário mensagem de erro</returns>
         </member>
         <member name="M:ControleJogosApi.Controllers.JogoController.Get">
-            <summary>
-            GET: api/Jogo
+            <summary>        
             Busca todos os jogos do usuário logado
             </summary>
             <returns>coleção de jogos</returns>
         </member>
         <member name="M:ControleJogosApi.Controllers.JogoController.Get(System.Int32)">
-            <summary>
-            GET: api/Jogo/5
+            <summary>        
             Busca os dados de um determinado jogo
             </summary>
             <param name="id"></param>

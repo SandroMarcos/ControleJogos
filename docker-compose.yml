@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  controlejogosapi:
+    image: ${DOCKER_REGISTRY-}controlejogosapi
+    build:
+      context: .
+      dockerfile: ControleJogosApi/Dockerfile    
